@@ -1,0 +1,63 @@
+<form class="box" action="/placemark/{{placemark._id}}/addplace" method="POST">
+  <label>Enter Sports Ground Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Club Name" name="club">
+      </div>
+      <div class="field">
+        <div class="control">
+          <div class="select is-rounded is-hoverable">
+            <select name="category" required>
+              <option value="" disabled selected>Select Sport</option>
+              <option value="Soccer">Soccer</option>
+              <option value="GAA">GAA</option>
+              <option value="Golf">Golf</option>
+              <option value="Rugby">Rugby</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <div class="select is-rounded is-hoverable">
+            <select name="county" required>
+              <option value="" disabled selected>Select County</option>
+              <option value="Cork">Cork</option>
+              <option value="Derry">Derry
+              <option value="Donegal">Donegal
+              <option value="Down">Down
+              <option value="Dublin">Dublin
+              <option value="Fermanagh">Fermanagh
+              <option value="Galway">Galway
+              <option value="Kerry">Kerry
+              <option value="Kildare">Kildare
+              <option value="Kilkenny">Kilkenny
+              <option value="Laois">Laois
+              <option value="Leitrim">Leitrim
+              <option value="Limerick">Limerick
+              <option value="Longford">Longford
+              <option value="Louth">Louth
+              <option value="Mayo">Mayo
+              <option value="Meath">Meath
+              <option value="Monaghan">Monaghan
+              <option value="Offaly">Offaly
+              <option value="Roscommon">Roscommon
+              <option value="Sligo">Sligo
+              <option value="Tipperary">Tipperary
+              <option value="Tyrone">Tyrone
+              <option value="Waterford">Waterford
+              <option value="Westmeath">Westmeath
+              <option value="Wexford">Wexford
+              <option value="Wicklow">Wicklow
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Eircode" name="eircode">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Add Ground</button>
+</form>

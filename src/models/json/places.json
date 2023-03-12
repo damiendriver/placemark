@@ -1,0 +1,20 @@
+{
+  "places": [
+    {
+      "club": "testing",
+      "category": "golf",
+      "county": "Wexford",
+      "eircode": "Y3585FH",
+      "_id": "2d5a0037-7bb3-410a-865d-65f38abc9ed3",
+      "placemarkid": "baf29e4a-e5f1-4cdf-b505-7fcdaaf527f2"
+    },
+    {
+      "title": "testing 123",
+      "category": "soccer",
+      "county": "Waterford",
+      "eircode": "TH5TH253",
+      "_id": "0e4f99c1-972f-4437-b6db-602b67509316",
+      "placemarkid": "baf29e4a-e5f1-4cdf-b505-7fcdaaf527f2"
+    }
+  ]
+}

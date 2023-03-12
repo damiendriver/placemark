@@ -1,0 +1,22 @@
+{{> menu}}
+
+<form class="box"  action="/place/{{placemark._id}}/updateplace/{{place._id}}" method="POST">
+  <label>Update Ground Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" name="club" value="{{place.club}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text" name="category" value="{{place.category}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text"  name="county" value="{{place.county}}">
+      </div>
+      <div class="field">
+        <input class="input" type="text"  name="eircode" value="{{place.eircode}}">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Ground</button>
+</form>

@@ -1,0 +1,40 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Club</th>
+      <th>Category</th>
+      <th>County</th>
+      <th>Eircode</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each placemark.places}}
+      <tr>
+        <td>
+          {{club}}
+        </td>
+        <td>
+          {{category}}
+        </td>
+        <td>
+          {{county}}
+        </td>
+        <td>
+          {{eircode}}
+        </td>
+        <td>
+          <a href="/place/{{../placemark._id}}/editplace/{{_id}}" class="ui icon button">
+            <i class="fas fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/placemark/{{../placemark._id}}/deleteplace/{{_id}}" class="ui icon button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
